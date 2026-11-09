@@ -1,0 +1,12 @@
+name: 感想・使用感
+description: 使ってみた感想や気づいたことを気軽に送れます
+title: "[感想] "
+labels: ["feedback"]
+body:
+  - type: textarea
+    id: text
+    attributes:
+      label: 感じたこと
+      description: 良かった点だけでも構いません。
+    validations:
+      required: true

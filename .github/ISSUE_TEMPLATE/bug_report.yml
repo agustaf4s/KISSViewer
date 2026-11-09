@@ -1,0 +1,54 @@
+name: 不具合の報告
+description: KISSViewer の動作がおかしいときに使います
+title: "[不具合] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ご報告ありがとうございます。分かる範囲でご記入ください。
+        **フォルダ名やファイル名などの個人的な情報は、書かないでください。**（必要なら、伏せ字にしてください）
+  - type: input
+    id: version
+    attributes:
+      label: KISSViewer のバージョン
+      description: ［ヘルプ］－［バージョン情報］で確認できます。
+      placeholder: "例: 1.00"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows のバージョン
+      placeholder: "例: Windows 11 24H2"
+    validations:
+      required: true
+  - type: input
+    id: data
+    attributes:
+      label: どのデータですか
+      description: データ（書庫・フォルダ）の名前と、入手元が分かれば書いてください。
+    validations:
+      required: false
+  - type: textarea
+    id: what
+    attributes:
+      label: どうなりましたか
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現する手順
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 本来はどうなってほしいか（分かれば）
+    validations:
+      required: false

@@ -1,0 +1,18 @@
+name: 要望
+description: 「こんな機能がほしい」「ここが不便」を送ります
+title: "[要望] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: want
+    attributes:
+      label: 何をしようとして、何に困りましたか
+      description: 機能の名前より、「何をしようとして何に困ったか」を書いていただくと伝わりやすくなります。
+    validations:
+      required: true
+  - type: textarea
+    id: ideal
+    attributes:
+      label: どうなるとよいですか
+    validations:
+      required: false
